@@ -11,5 +11,5 @@ unload:
 	sudo rmmod -f client.ko
  
 clean:
-	rm -rf server
+	#rm -rf server
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
